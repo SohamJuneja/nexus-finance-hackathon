@@ -38,8 +38,9 @@ const config = createConfig({
   ],
   // The transport layer that tells wagmi how to send requests to the blockchain
   transports: {
-    [zetaAthensTestnet.id]: http(), // For ZetaChain, use its default RPC
-    [sepolia.id]: http(),          // For Sepolia, use its default RPC
+    // Replace the old URL with the new one here as well
+    [zetaAthensTestnet.id]: http('https://zetachain-athens-evm.blockpi.network/v1/rpc/public'),
+    [sepolia.id]: http(),
   },
 });
 
