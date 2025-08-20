@@ -1,7 +1,10 @@
 // src/App.jsx
+
+import './App.css'; // Add this line
 import WalletConnect from './components/Wallet/WalletConnect';
 import PortfolioView from './components/Dashboard/PortfolioView';
 import LendingModal from './components/Lending/LendingModal';
+import AlertsPanel from './components/Alerts/AlertsPanel';
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
       <main>
         <PortfolioView />
         <LendingModal />
+        <AlertsPanel />
       </main>
     </div>
   );
